@@ -212,16 +212,6 @@ details p{margin:0 0 18px;color:#c3cadf;max-width:70ch}
 .addr{font-size:15px;color:#c9d0e6;margin-top:22px;line-height:1.7}
 .addr b{color:var(--fg)}
 
-/* kalendarz Zoho */
-.booking{margin-top:20px;background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:clamp(20px,3.5vw,36px);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);scroll-margin-top:90px}
-.booking-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px 24px;margin-bottom:20px}
-.booking-head h2{font-family:var(--f-display);font-weight:800;font-size:clamp(24px,3vw,36px);line-height:1.1;margin:12px 0 0;text-wrap:balance}
-.booking-head p{margin:6px 0 0;color:var(--muted);font-size:15px;max-width:56ch}
-.booking-head a{font-size:14px;color:var(--accent);white-space:nowrap}
-.booking-frame{position:relative;border-radius:18px;overflow:hidden;background:#fff;border:1px solid rgba(143,180,255,.35);box-shadow:0 30px 80px -30px rgba(80,110,220,.55)}
-.booking-frame iframe{display:block;width:100%;height:820px;border:0}
-@media (max-width:720px){.booking-frame iframe{height:980px}}
-.booking-frame .loading{position:absolute;inset:0;display:grid;place-items:center;color:#5a6788;font-size:15px;pointer-events:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:clamp(50px,8vw,90px);padding-block:36px 110px;color:var(--muted);font-size:13.5px}
 footer .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
 @media (max-width:760px){footer .wrap{grid-template-columns:1fr}}
@@ -285,7 +275,7 @@ footer a{color:var(--accent)}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
             Zadzwoń teraz
           </a>
-          <a class="btn ghost" href="#kalendarz">
+          <a class="btn ghost" href="https://m2taxdoradcypodatkowi.zohobookings.eu/m2taxdoradcypodatkowi" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
             Zarezerwuj termin
           </a>
@@ -312,7 +302,7 @@ footer a{color:var(--accent)}
           <span>Zdjęcie pisma wyślij na <code>kancelaria@m2tax.pl</code></span>
           <button class="copy" type="button" data-copy="kancelaria@m2tax.pl">Kopiuj</button>
         </div>
-        <a class="btn primary" href="#kalendarz">Wybierz termin w kalendarzu</a>
+        <a class="btn primary" href="https://m2taxdoradcypodatkowi.zohobookings.eu/m2taxdoradcypodatkowi" target="_blank" rel="noopener">Wybierz termin w kalendarzu</a>
         <p class="hours">Telefonicznie, przez Google Meet albo w kancelarii we Wrocławiu</p>
       </aside>
     </section>
@@ -508,35 +498,19 @@ footer a{color:var(--accent)}
         <div class="panel">
           <span class="eyebrow">Kalendarz</span>
           <h2 style="margin-top:14px;font-size:clamp(22px,2.6vw,30px)">Zarezerwuj rozmowę</h2>
-          <p>Wybierz rodzaj spotkania. Kalendarz otworzy się niżej na tej stronie.</p>
+          <p>Wybierz wolny termin. Potwierdzenie dostaniesz e-mailem.</p>
           <div class="slots">
-            <a class="slot" href="#kalendarz">
+            <a class="slot" href="https://m2taxdoradcypodatkowi.zohobookings.eu/m2taxdoradcypodatkowi" target="_blank" rel="noopener">
               <div><b>Pierwsza rozmowa</b><span>Telefon lub Google Meet, ocena sprawy i wycena</span></div><em>do 20 min · 0 zł</em>
             </a>
-            <a class="slot" href="#kalendarz">
+            <a class="slot" href="https://m2taxdoradcypodatkowi.zohobookings.eu/m2taxdoradcypodatkowi" target="_blank" rel="noopener">
               <div><b>Konsultacja online</b><span>Google Meet z doradcą podatkowym</span></div><em>60 min</em>
             </a>
-            <a class="slot" href="#kalendarz">
+            <a class="slot" href="https://m2taxdoradcypodatkowi.zohobookings.eu/m2taxdoradcypodatkowi" target="_blank" rel="noopener">
               <div><b>Spotkanie w kancelarii</b><span>ul. Zwycięska 3, Wrocław</span></div><em>60 min</em>
             </a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- KALENDARZ -->
-    <section class="booking" id="kalendarz" aria-labelledby="kal-h">
-      <div class="booking-head">
-        <div>
-          <span class="eyebrow">Kalendarz</span>
-          <h2 id="kal-h">Wybierz termin rozmowy</h2>
-          <p>Wybierz rodzaj spotkania i wolną godzinę. Potwierdzenie przyjdzie na Twój e-mail. Wolisz szybciej? Zadzwoń: 883 643 565.</p>
-        </div>
-        <a href="https://m2taxdoradcypodatkowi.zohobookings.eu/m2taxdoradcypodatkowi" target="_blank" rel="noopener">Otwórz kalendarz w nowej karcie ↗</a>
-      </div>
-      <div class="booking-frame">
-        <div class="loading" aria-hidden="true">Ładowanie kalendarza…</div>
-        <iframe src="https://m2taxdoradcypodatkowi.zohobookings.eu/m2taxdoradcypodatkowi" title="Rezerwacja terminu u doradcy podatkowego" loading="lazy" allow="payment" referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
     </section>
 
@@ -559,7 +533,7 @@ footer a{color:var(--accent)}
 
 <div class="mbar">
   <a class="btn primary" href="tel:+48883643565">Zadzwoń</a>
-  <a class="btn ghost" href="#kalendarz">Umów termin</a>
+  <a class="btn ghost" href="https://m2taxdoradcypodatkowi.zohobookings.eu/m2taxdoradcypodatkowi" target="_blank" rel="noopener">Umów termin</a>
 </div>
 
 <script>
@@ -631,7 +605,7 @@ function select(id, user){
     <ul>${l.we.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
     <div class="cta-row">
       <a class="btn primary" href="tel:+48883643565">Zadzwoń: 883 643 565</a>
-      <a class="btn ghost" href="#kalendarz">Umów termin</a>
+      <a class="btn ghost" href="https://m2taxdoradcypodatkowi.zohobookings.eu/m2taxdoradcypodatkowi" target="_blank" rel="noopener">Umów termin</a>
     </div>`;
   if(user){ ansEl.classList.remove("fade-in"); void ansEl.offsetWidth; ansEl.classList.add("fade-in");
     try{ localStorage.setItem("pp_letter", id); }catch(e){} }
